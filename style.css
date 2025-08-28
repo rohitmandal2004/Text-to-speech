@@ -88,3 +88,39 @@ select{
     background-position-x: calc(100% - 20px);
     background-position-y: center;
 }
+
+/* ----------- Responsive Design ----------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    textarea {
+        height: 220px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        height: 180px;
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    select, button {
+        width: 100%;
+    }
+}
